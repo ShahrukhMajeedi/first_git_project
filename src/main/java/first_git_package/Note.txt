@@ -36,3 +36,78 @@ NOTE: git status    ->   This is our friend. This can be used anytime to see the
         *git push
 NOTE: PULL BEFORE PUSH
         *git pull -> git add . -> git commit -m "message" -> git push
+
+        *******************************DAY 1 SUMMARY*****************************************************
+        ***Pre-requisition
+        *Git Install
+        *GitHub account
+        *Git Authentication(create token, add username and token so your account verification is complete)
+        ****First Time Git Push****
+        ONLY ONCE    *git init
+        EVERY TIME    *git add .
+        EVERY TIME    *git commit -m "first commit"
+        ONLY ONCE    *git branch -M main
+        ONLY ONCE    *git remote add origin https://github.com/abayramus/first_git_project.git
+        ONLY ONCE    *git push -u origin main
+*Note: If you get error, Just google the error message,...
+        *FOLLOW THE INSTRUCTIONS IN PUR GITHUB REPOSITORY
+
+****Second Time Push****
+           git add .
+           git commit -m "message"
+           git push
+
+****GIT PULL
+    git pull gets latest git-hub code in our local
+    git pull = git fetch + git merge
+
+****CONFLICT
+    When we try to merge the code that are in the SAME spot but with SAME spot DIFFERENT code -
+****How to Resolve conflict?
+    Manually fix: remove the illegal characters(error messages), create a new commit(add, commit), than push
+
+****To minimize conflict, we can clone the project, add our new code quickly, then commit, than push
+    git clone https://github.com/ShahrukhMajeedi/Test.git
+    Add your new  codes
+    git add .
+    git commit -m ""
+    git push
+
+***************************************DAY 2******************************************************
+***How to create BRUNCH:
+*git branch OR git branch -a -> Shows all branches. Default branch is the master branch
+* git branch feature
+* git checkout feature
+* git branch -d feature
+* git checkout master
+* git merge feature master branch
+*git merge master feature branch
+-> creates new branch named feature. This is the copy based on current branch. -> switch to feature branch
+-> delete feature branch
+ -> switch to master branch
+-> If you run this when you are on master branch, then feature branch codes merges into
+-> If you run this when you are on feature branch, then master branch codes merges into
+git push --set-upstream origin feature -> use when you push for the FIRST TIME. After the first time, git push is enough
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
