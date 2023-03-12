@@ -1,7 +1,7 @@
 *****GIT DAY1*****
 1. Create a project
 2. Create a GITHUB REPOSITORY
-    *go to git-hub
+    *go to github
     *Repositories>Create New Repository> first_git_project
 3. Create a FIRST COMMIT for the First time
 ONLY ONCE    *git init
@@ -10,11 +10,11 @@ EVERY TIME    *git commit -m "first commit"
 ONLY ONCE    *git branch -M main
 ONLY ONCE    *git remote add origin https://github.com/abayramus/first_git_project.git
 ONLY ONCE    *git push -u origin main
-    *****Then your code should be pushed to git-hub. REFRESH YOUR PAGE TO SEE THE CODE
+    *****Then your code should be pushed to github. REFRESH YOUR PAGE TO SEE THE CODE
 NOTE: git status    ->   This is our friend. This can be used anytime to see the progress
 4. Create a new SECOND COMMIT
     *Create a new java class under first_git_package: MySecondClass
-    *Create a new commit and push the code to git-hub
+    *Create a new commit and push the code to github
         * git add .
         * git commit -m "added my second java class"
         * git push
@@ -25,7 +25,7 @@ NOTE: git status    ->   This is our friend. This can be used anytime to see the
         *git commit -m "adding fourth class"
         *git push
 6. GIT PULL
-    *git pull is used to get the code from git-hub
+    *git pull is used to get the code from github
     *git pull = git fetch + git merge
         NOTE: if git pull trows error then use:
         git fetch
@@ -36,46 +36,63 @@ NOTE: git status    ->   This is our friend. This can be used anytime to see the
         *git push
 NOTE: PULL BEFORE PUSH
         *git pull -> git add . -> git commit -m "message" -> git push
-
-        *******************************DAY 1 SUMMARY*****************************************************
-        ***Pre-requisition
-        *Git Install
-        *GitHub account
-        *Git Authentication(create token, add username and token so your account verification is complete)
-        ****First Time Git Push****
-        ONLY ONCE    *git init
-        EVERY TIME    *git add .
-        EVERY TIME    *git commit -m "first commit"
-        ONLY ONCE    *git branch -M main
-        ONLY ONCE    *git remote add origin https://github.com/abayramus/first_git_project.git
-        ONLY ONCE    *git push -u origin main
-*Note: If you get error, Just google the error message,...
-        *FOLLOW THE INSTRUCTIONS IN PUR GITHUB REPOSITORY
-
-****Second Time Push****
-           git add .
-           git commit -m "message"
-           git push
-
-****GIT PULL
-    git pull gets latest git-hub code in our local
-    git pull = git fetch + git merge
-
-****CONFLICT
-    When we try to merge the code that are in the SAME spot but with SAME spot DIFFERENT code -
-****How to Resolve conflict?
-    Manually fix: remove the illegal characters(error messages), create a new commit(add, commit), than push
-
-****To minimize conflict, we can clone the project, add our new code quickly, then commit, than push
-    git clone https://github.com/ShahrukhMajeedi/Test.git
-    Add your new  codes
+**********************DAY 1 SUMMARY***********************************
+*****Prerequisites :
+*Git Install
+*GitHub account
+*Git Authentication(create token, add username and token so your account verification is complete)
+*****First Time Git Push*****
+*FOLLOW THE INSTRUCTION IN OUR GITHUB REPOSITORY
+    git init
     git add .
-    git commit -m ""
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/abayramus/demo-repo.git
+    git push -u origin main
+*NOTE : If you get error, just google the error message,...
+*****Second Time Git Push*****
+    git add .
+    git commit -m "any message"
     git push
+****GIT PULL
+    git pull gets latest github code in our local
+    git pull = git fetch + git merge
+****CONFLICT
+    When we try to merge the code that are in the - SAME spot with DIFFERENT codes -
+****How to Resolve conflict?
+    Manually fix : remove the illegal characters(error message)
+    create a new commit(add, commit)
+    then push
+****To minimize conflict, we can clone the project, add our new code quickly, then commit then push
+    git clone https://github.com/abayramus/first_git_project.git
+    add your new codes
+    git add .
+    git commit -m
+    git push
+********************DAY 2*****************************************************
+BRANCHING
+git branch -a -> show me all branch
+git branch ahmet -> create ahmet branch
+git checkout ahmet -> switched to ahmet branch
+created a code : MySixthClass
+create a new commit and push
+    git add .
+    git commit -m "message"
+    git push --set-upstream origin ahmet
+Then codes will be in the remote ahmet branch
 
-***************************************DAY 2******************************************************
-****BRANCH
-git branch -a --> Shows the all branches
+***One more side branch flow
+   Create a class "MySeventhClass"
+   Crease new commit and push
+   git add .
+   git commit -m "message"
+   git push
+  Then new codes will be in remote ahmed branch
+  Then in git-hub expert, or we will do:
+  pull request(PR)
+  Then code review(Expert)
+  Then code merge(Expert
+
 
 
 
