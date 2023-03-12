@@ -1,5 +1,5 @@
-<<<<<<< HEAD
+
 Ahmed's code
-=======
+
 Sina's code
->>>>>>> e4a4c90bd844fbabcaa1162b0985ba1a43124a0a
+
